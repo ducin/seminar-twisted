@@ -8,6 +8,6 @@ class EchoFactory(protocol.Factory):
     def buildProtocol(self, addr):
         return Echo()
 
-reactor.listenTCP(1234, EchoFactory())
+reactor.listenTCP(8080, EchoFactory())
 reactor.run()
 
